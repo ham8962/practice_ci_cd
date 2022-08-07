@@ -26,10 +26,10 @@ jobs:
         run: npm install
       
       - run: npm run lint
-        if: ${{ alwyas() }}
+        if: ${{ always() }}
       
       - run: npm run tsc
-        if: ${{ alwyas() }}
+        if: ${{ always() }}
 
       - run: npm run build
-        if: ${{ alwyas() }}
+        if: ${{ always() }}
